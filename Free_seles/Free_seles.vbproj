@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0816311-8D5A-4712-ABF9-09BCD6C35102}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Free_seles.My.MyApplication</StartupObject>
+    <RootNamespace>Free_seles</RootNamespace>
+    <AssemblyName>Free_seles</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Free_seles.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Free_seles.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_emp.Designer.vb">
+      <DependentUpon>Add_emp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add_emp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_user_Pass_Form.Designer.vb">
+      <DependentUpon>Add_user_Pass_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add_user_Pass_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Form.Designer.vb">
+      <DependentUpon>Customer_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_Form.Designer.vb">
+      <DependentUpon>Emp_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emp_Module.vb" />
+    <Compile Include="Free_SelesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Free_SelesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Items_Form.Designer.vb">
+      <DependentUpon>Items_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Items_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="item_Qunitity_Form.Designer.vb">
+      <DependentUpon>item_Qunitity_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="item_Qunitity_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="item_sales.Designer.vb">
+      <DependentUpon>item_sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="item_sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.vb">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form1.Designer.vb">
+      <DependentUpon>Main_Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Customer_Module.vb" />
+    <Compile Include="Modules\Items_Module.vb" />
+    <Compile Include="Modules\Roles_Module.vb" />
+    <Compile Include="Modules\Sale_Module.vb" />
+    <Compile Include="Modules\User_Pass_Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_View.Designer.vb">
+      <DependentUpon>Report_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roles_Form.Designer.vb">
+      <DependentUpon>Roles_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roles_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.vb">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale_Form.Designer.vb">
+      <DependentUpon>Sale_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sale_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\sittingModule.vb" />
+    <Compile Include="User_Form.Designer.vb">
+      <DependentUpon>User_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Add_emp.resx">
+      <DependentUpon>Add_emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_user_Pass_Form.resx">
+      <DependentUpon>Add_user_Pass_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Form.resx">
+      <DependentUpon>Customer_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emp_Form.resx">
+      <DependentUpon>Emp_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items_Form.resx">
+      <DependentUpon>Items_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_Qunitity_Form.resx">
+      <DependentUpon>item_Qunitity_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_sales.resx">
+      <DependentUpon>item_sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form1.resx">
+      <DependentUpon>Main_Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_View.resx">
+      <DependentUpon>Report_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roles_Form.resx">
+      <DependentUpon>Roles_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale_Form.resx">
+      <DependentUpon>Sale_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Form.resx">
+      <DependentUpon>User_Form.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Free_SelesDataSet.xsc">
+      <DependentUpon>Free_SelesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Free_SelesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Free_SelesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Free_SelesDataSet.xss">
+      <DependentUpon>Free_SelesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-08-22 at 9.13.33 AM %284%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\برنامج-ادارة-مناديب-البيع-2-1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
